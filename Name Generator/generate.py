@@ -12,11 +12,13 @@ def random_line(filename="names.txt", word_count=2):
 
     to_return = str()
     for word in words:
+        word = word.strip("\n")
+        word += " "
         to_return += word
 
     return to_return
 
 
 with open("output.txt", "w+") as f:
-    for _ in range(10000):
+    for _ in range(100):
         print(random_line(), file=f)
