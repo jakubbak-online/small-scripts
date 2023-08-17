@@ -4,8 +4,8 @@ import random
 def random_line(filename="names.txt", word_count=2):
     words = list()
 
-    with open(filename, "r") as f:
-        all_lines = f.readlines()
+    with open(filename, "r") as f_inner:
+        all_lines = f_inner.readlines()
         for count in range(word_count):
             line = random.choice(all_lines)
             words.append(line)
