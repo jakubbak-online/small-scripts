@@ -1,0 +1,1 @@
+New-Item "D:\srsdirectories\automerge.txt"
